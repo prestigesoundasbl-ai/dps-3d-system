@@ -6,7 +6,7 @@ import os
 from abc import ABC, abstractmethod
 from build123d import *
 
-PROJECT_ROOT = "/Users/prestigesound/Projects/3D/Active/DPS_3D_SYSTEM"
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, 'output')
 
 class BuildParametricModel(ABC):

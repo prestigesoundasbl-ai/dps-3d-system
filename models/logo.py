@@ -340,7 +340,7 @@ def logo_on_face(width=50.0, depth=1.0, style="engrave",
 def copy_logo_to_web():
     """Copie le logo PNG vers web/assets/ pour l'interface."""
     import shutil
-    src = "/Users/prestigesound/Desktop/PRESTIGE_BUSINESS/LOGOS_ET_MEDIA/Logo_Prestige_Sound/PNG/logo-512-transparent.png"
+    src = os.path.join(os.path.expanduser("~"), "Desktop", "PRESTIGE_BUSINESS", "LOGOS_ET_MEDIA", "Logo_Prestige_Sound", "PNG", "logo-512-transparent.png")
     dst = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                        '..', 'web', 'assets', 'logo.png')
     if os.path.exists(src):

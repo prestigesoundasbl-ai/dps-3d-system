@@ -4,3 +4,15 @@ __pycache__/
 .DS_Store
 exports/
 .env
+node_modules/
+docs/
+output/
+scad/
+web/
+server/
+scripts/
+package*.json
+*.gcode
+*.3mf
+*.dxf
+*.pdf

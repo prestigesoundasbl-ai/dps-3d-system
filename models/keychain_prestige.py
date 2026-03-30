@@ -11,7 +11,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from build123d import *
 
-PROJECT_ROOT = "/Users/prestigesound/Projects/3D/Active/DPS_3D_SYSTEM"
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, 'output')
 LOGO_SVG = os.path.join(PROJECT_ROOT, "models", "assets", "logo-prestige-sound-v2.svg")
 
